@@ -1,0 +1,15 @@
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.exe
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.deps.json
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.runtimeconfig.json
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.pdb
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.GeneratedMSBuildEditorConfig.editorconfig
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.AssemblyInfoInputs.cache
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.AssemblyInfo.cs
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.csproj.CoreCompileInputs.cache
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.sourcelink.json
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\refint\Robo_InserirXMLSAP.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.pdb
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.genruntimeconfig.cache
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\ref\Robo_InserirXMLSAP.dll
