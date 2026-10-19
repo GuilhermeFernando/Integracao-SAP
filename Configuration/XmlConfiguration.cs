@@ -1,13 +1,13 @@
 using Microsoft.Extensions.Configuration;
-public class RoboSettings
+public class XmlConfiguration
 {
     private readonly IConfiguration _configuration;
-    public string SourceDirectory = string.Empty;
-    public string DestinationDirectorySucess = string.Empty;
-    public string DestinationDirectoryError = string.Empty;
+    public string SourceDirectory {get;set;} = string.Empty;
+    public string DestinationDirectorySuccess {get;set;} = string.Empty;
+    public string DestinationDirectoryError {get;set;} = string.Empty;
 
 
-    public RoboSettings()
+    public XmlConfiguration()
     {
         _configuration = new ConfigurationBuilder()
         .SetBasePath(AppContext.BaseDirectory)
@@ -15,11 +15,11 @@ public class RoboSettings
         .Build();
     }
 
-    public RoboSettings GetRoboSettings()
+    public XmlConfiguration GetRoboSettings()
     {
         return _configuration 
         .GetSection("Robo")
-        .Get<RoboSettings>()
+        .Get<XmlConfiguration>()
         ?? throw new InvalidOperationException ("A configuracao do Robo nao foi encontrada");
     }
 

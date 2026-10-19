@@ -13,3 +13,15 @@ I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\refint\Robo_InserirXMLSAP.dl
 I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.pdb
 I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.genruntimeconfig.cache
 I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\ref\Robo_InserirXMLSAP.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.csproj.AssemblyReference.cache
+I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_Ins.5D4F6F66.Up2Date
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\appsettings.json

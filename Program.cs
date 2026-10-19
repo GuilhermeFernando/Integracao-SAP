@@ -4,18 +4,10 @@ Console.WriteLine("===========================================");
 
 Console.WriteLine("Iniciando aplicacao...");
 
-string pastaXML = Path.Combine(Directory.GetCurrentDirectory(),"XML");
+XmlConfiguration configuracao = new XmlConfiguration();
 
-if(Directory.Exists(pastaXML))
-{
-    Console.WriteLine("A pasta XML foi encontrada");
-}
-else
-{
-    Console.WriteLine("A pasta XML nao foi encontrada");
-}
+XmlConfiguration settings = configuracao.GetRoboSettings();
 
-
-
-
-Console.ReadKey();
+Console.WriteLine($"Origem: {settings.SourceDirectory}");
+Console.WriteLine($"Sucesso: {settings.DestinationDirectorySuccess}");
+Console.WriteLine($"Erro: {settings.DestinationDirectoryError}");
