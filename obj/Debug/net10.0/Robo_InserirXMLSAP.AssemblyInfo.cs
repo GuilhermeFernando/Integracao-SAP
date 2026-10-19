@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Robo_InserirXMLSAP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b3e6930d0b96703cf2dbd24de67c6385d9013a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bd6be370728e525ceee860aae8d186b2bf25052")]
 [assembly: System.Reflection.AssemblyProductAttribute("Robo_InserirXMLSAP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Robo_InserirXMLSAP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
