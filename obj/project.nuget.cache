@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3kNf3gZGpRw=",
+  "dgSpecHash": "Ub3FTe0nnsM=",
   "success": true,
   "projectFilePath": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Robo_InserirXMLSAP.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,10 @@
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.13\\microsoft.extensions.fileproviders.abstractions.10.0.13.nupkg.sha512",
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.13\\microsoft.extensions.fileproviders.physical.10.0.13.nupkg.sha512",
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.13\\microsoft.extensions.filesystemglobbing.10.0.13.nupkg.sha512",
-    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.13\\microsoft.extensions.primitives.10.0.13.nupkg.sha512"
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.13\\microsoft.extensions.primitives.10.0.13.nupkg.sha512",
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.12\\microsoft.netcore.app.runtime.win-x64.10.0.12.nupkg.sha512",
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.12\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.12.nupkg.sha512",
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.12\\microsoft.aspnetcore.app.runtime.win-x64.10.0.12.nupkg.sha512"
   ],
   "logs": []
 }

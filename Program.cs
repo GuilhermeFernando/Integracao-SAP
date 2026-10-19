@@ -11,3 +11,6 @@ XmlConfiguration settings = configuracao.GetRoboSettings();
 Console.WriteLine($"Origem: {settings.SourceDirectory}");
 Console.WriteLine($"Sucesso: {settings.DestinationDirectorySuccess}");
 Console.WriteLine($"Erro: {settings.DestinationDirectoryError}");
+
+
+Console.ReadKey();

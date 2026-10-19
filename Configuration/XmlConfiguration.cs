@@ -23,5 +23,13 @@ public class XmlConfiguration
         ?? throw new InvalidOperationException ("A configuracao do Robo nao foi encontrada");
     }
 
+    public SapConfiguration GetSapConfiguration()
+    {
+        return _configuration
+        .GetSection("SapConnection")
+        .Get<SapConfiguration>()
+        ?? throw new InvalidOperationException("A configuracao da SL nao foi encontrada");
+    }
+
     
 }
