@@ -60,7 +60,15 @@
               "target": "Package",
               "version": "[10.0.13, )"
             },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[10.0.13, )"
+            },
             "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.13, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
               "version": "[10.0.13, )"
             }

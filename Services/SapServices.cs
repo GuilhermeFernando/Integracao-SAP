@@ -1,32 +1,16 @@
 using System.Net;
-using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
+
 public class SapServices : IDisposable
 {
     private readonly SapConfiguration _sapConfiguration;
     private readonly HttpClient _httpClient;
 
-    private HttpClient CriarHttpClient()
+    private static readonly JsonSerializerOptions JsonOptions = new()
     {
-        var cookieContainer = new CookieContainer();
-        const string certificadoEsperado = "0F5BFD9B56C861DC9060E63A788F37956EB8A08A9E98DCDC3185B75FAD7C57CF";
-        var handler = new HttpClientHandler
-        {
-            CookieContainer = cookieContainer,
-            UseCookies = true,
-
-            ServerCertificateCustomValidationCallback =
-        (_, certificate, _, _) =>
-            certificate is not null &&
-            string.Equals(
-                certificate.GetCertHashString(
-                    System.Security.Cryptography.HashAlgorithmName.SHA256),
-                certificadoEsperado,
-                StringComparison.OrdinalIgnoreCase)
-        };
-
-        return new HttpClient(handler);
-    }
+        PropertyNamingPolicy = null
+    };
 
     public SapServices(SapConfiguration sapConfiguration)
     {
@@ -34,10 +18,30 @@ public class SapServices : IDisposable
         _httpClient = CriarHttpClient();
     }
 
+
+    private HttpClient CriarHttpClient()
+    {
+        var cookieContainer = new CookieContainer();
+
+        var handler = new HttpClientHandler
+        {
+            CookieContainer = cookieContainer,
+            UseCookies = true,
+            ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+        };
+
+        var httpClient = new HttpClient(handler);
+
+        // Simula os cabeçalhos utilizados pelo Postman.
+        httpClient.DefaultRequestHeaders.Accept.Clear();       
+
+        return httpClient;
+    }
+
+
     public async Task LoginAsync()
     {
         string loginUrl = $"{_sapConfiguration.ServiceLayerUrl.TrimEnd('/')}/b1s/v1/Login";
-       
 
         var loginData = new
         {
@@ -46,25 +50,23 @@ public class SapServices : IDisposable
             Password = _sapConfiguration.Password
         };
 
-        string jsonEnviado = System.Text.Json.JsonSerializer.Serialize(loginData);
+        using var response = await _httpClient.PostAsJsonAsync(
+            loginUrl,
+            loginData,
+            JsonOptions
+            );
 
-        Console.WriteLine($"URL: {loginUrl}");
-        Console.WriteLine($"JSON enviado: {jsonEnviado}");
-
-        using var response = await _httpClient.PostAsJsonAsync(loginUrl, loginData);    
-
-        string respondeBody = await response.Content.ReadAsStringAsync();   
-
+        string responseBody = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
         {
-            throw new InvalidOperationException($"Falha no login do SAP. HTTP {(int)response.StatusCode}: {respondeBody}");
-        }
-
+            throw new InvalidOperationException(
+                $"Falha no login do SAP. HTTP {(int)response.StatusCode}: {responseBody}");
+        }       
     }
+
     public void Dispose()
     {
         _httpClient.Dispose();
     }
-
 }

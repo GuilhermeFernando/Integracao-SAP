@@ -25,3 +25,12 @@ I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Primiti
 I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_InserirXMLSAP.csproj.AssemblyReference.cache
 I:\Projeto SAP\Robo_InserirXMLSAP\obj\Debug\net10.0\Robo_Ins.5D4F6F66.Up2Date
 I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\appsettings.json
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging.Configuration.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging.Console.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
