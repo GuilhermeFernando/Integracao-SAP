@@ -15,8 +15,8 @@ try
 
     using SapServices sapServices = new(sapConfiguration);
 
-    await sapServices.LoginAsync();
-    Console.WriteLine("Login SAP realizado com sucesso");
+    await sapServices.GarantirSessaoAsync();
+    Console.WriteLine("Garantia de sessão concluída.");
 }
 catch (Exception ex)
 {

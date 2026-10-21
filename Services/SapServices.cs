@@ -6,6 +6,7 @@ public class SapServices : IDisposable
 {
     private readonly SapConfiguration _sapConfiguration;
     private readonly HttpClient _httpClient;
+    private readonly CookieContainer _cookieContainer = new CookieContainer();
 
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
@@ -21,11 +22,10 @@ public class SapServices : IDisposable
 
     private HttpClient CriarHttpClient()
     {
-        var cookieContainer = new CookieContainer();
 
         var handler = new HttpClientHandler
         {
-            CookieContainer = cookieContainer,
+            CookieContainer = _cookieContainer,
             UseCookies = true,
             ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
         };
@@ -37,6 +37,57 @@ public class SapServices : IDisposable
 
         return httpClient;
     }
+
+    private bool ValidarSessao()
+    {
+        string url = _sapConfiguration.ServiceLayerUrl.TrimEnd('/');
+
+        Uri uri = new Uri(url);
+
+        CookieCollection cookies = _cookieContainer.GetCookies(uri);
+
+        Cookie? sessao = cookies["B1SESSION"];
+
+        if (sessao == null)
+        {
+            return false;
+        }
+
+        if (sessao.Expired)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+    public async Task<bool> ValidarSessaoAsync()
+    {
+        if (!ValidarSessao())
+        {
+            return false;
+        }
+
+        string url = $"{_sapConfiguration.ServiceLayerUrl.TrimEnd('/')}/b1s/v1/Users";
+
+        using var response = await _httpClient.GetAsync(url);
+
+        return response.IsSuccessStatusCode;
+    }
+
+
+    public async Task GarantirSessaoAsync()
+    {
+        bool sessaoValida = await ValidarSessaoAsync();
+
+        if (!sessaoValida)
+        {
+            await LoginAsync();
+        }
+    }
+
+
+
 
 
     public async Task LoginAsync()

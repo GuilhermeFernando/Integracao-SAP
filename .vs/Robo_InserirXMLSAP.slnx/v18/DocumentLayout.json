@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:robo_inserirxmlsap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\configuration\\xmlconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:configuration\\xmlconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\services\\sapservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:services\\sapservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\configuration\\xmlconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:configuration\\xmlconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\configuration\\sapconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "XmlConfiguration.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Configuration\\XmlConfiguration.cs",
               "RelativeDocumentMoniker": "Configuration\\XmlConfiguration.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-21T02:27:46.831Z",
               "EditorCaption": ""
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SapServices.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Services\\SapServices.cs",
               "RelativeDocumentMoniker": "Services\\SapServices.cs",
               "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Services\\SapServices.cs",
               "RelativeToolTip": "Services\\SapServices.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD8AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T03:27:17.907Z",
               "EditorCaption": ""
