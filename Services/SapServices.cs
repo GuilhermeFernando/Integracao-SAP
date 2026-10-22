@@ -86,10 +86,6 @@ public class SapServices : IDisposable
         }
     }
 
-
-
-
-
     public async Task LoginAsync()
     {
         string loginUrl = $"{_sapConfiguration.ServiceLayerUrl.TrimEnd('/')}/b1s/v1/Login";
@@ -111,9 +107,28 @@ public class SapServices : IDisposable
 
         if (!response.IsSuccessStatusCode)
         {
-            throw new InvalidOperationException(
-                $"Falha no login do SAP. HTTP {(int)response.StatusCode}: {responseBody}");
+            throw new InvalidOperationException($"Falha no login do SAP. HTTP {(int)response.StatusCode}: {responseBody}");
         }       
+    }
+
+
+    public async Task<HttpResponseMessage> RenovarSessao(Func<Task<HttpResponseMessage>> requisicao)
+    {
+        var response = await requisicao();
+        
+        if (response.StatusCode != System.Net.HttpStatusCode.Unauthorized)
+        {
+            return response;
+        }
+        response.Dispose();
+
+        Console.WriteLine("Sessão expirada. Renovando sessão no SAP...");
+
+        await LoginAsync();
+
+        response = await requisicao();
+
+        return response;
     }
 
     public void Dispose()
