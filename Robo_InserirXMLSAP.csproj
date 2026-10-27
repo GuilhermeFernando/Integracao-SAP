@@ -24,5 +24,9 @@
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
 </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
 
 </Project>

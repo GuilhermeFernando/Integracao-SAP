@@ -34,3 +34,4 @@ I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging
 I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Logging.Console.dll
 I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
 I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+I:\Projeto SAP\Robo_InserirXMLSAP\bin\Debug\net10.0\Robo_InserirXMLSAP.runtimeconfig.dev.json
