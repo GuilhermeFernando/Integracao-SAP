@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HsFa/AClt8Y=",
+  "dgSpecHash": "X1pf9XGBxno=",
   "success": true,
   "projectFilePath": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Robo_InserirXMLSAP.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,8 @@
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.logging.console\\10.0.13\\microsoft.extensions.logging.console.10.0.13.nupkg.sha512",
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.options\\10.0.13\\microsoft.extensions.options.10.0.13.nupkg.sha512",
     "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.13\\microsoft.extensions.options.configurationextensions.10.0.13.nupkg.sha512",
-    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.13\\microsoft.extensions.primitives.10.0.13.nupkg.sha512"
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.13\\microsoft.extensions.primitives.10.0.13.nupkg.sha512",
+    "C:\\Users\\Guilherme Machado\\.nuget\\packages\\sap.data.hana.net.v10.0\\2.30.27\\sap.data.hana.net.v10.0.2.30.27.nupkg.sha512"
   ],
   "logs": []
 }

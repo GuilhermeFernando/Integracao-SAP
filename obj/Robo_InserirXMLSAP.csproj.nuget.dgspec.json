@@ -71,6 +71,10 @@
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
               "version": "[10.0.13, )"
+            },
+            "Sap.Data.Hana.Net.v10.0": {
+              "target": "Package",
+              "version": "[2.30.27, )"
             }
           },
           "imports": [
