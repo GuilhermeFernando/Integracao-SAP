@@ -21,16 +21,6 @@ try
     Console.WriteLine("Garantia de sessão concluída.");
 
 
-    string caminhoXml = @"C:\Users\wevy_partner\Documents\Guilherme\35261048722915000218570010000123771133571705.xml";
-
-    var xmlServices = new XmlServices();
-
-    var documento = xmlServices.CarregarXml(caminhoXml);
-
-    Console.WriteLine($"Elemento raiz: {documento.Root?.Name}");
-    Console.WriteLine($"Namespace: {documento.Root?.GetDefaultNamespace()}");
-
-
 }
 catch (Exception ex)
 {
