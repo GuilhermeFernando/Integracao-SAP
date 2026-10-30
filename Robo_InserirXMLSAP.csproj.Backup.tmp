@@ -25,5 +25,10 @@
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
 </ItemGroup>
+<ItemGroup>
+	<None Update="Queries\**\*.sql">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
+</ItemGroup>
 
 </Project>

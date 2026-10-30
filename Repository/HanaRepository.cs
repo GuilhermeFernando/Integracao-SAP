@@ -12,37 +12,40 @@ namespace Robo_InserirXMLSAP.Repository
             _hanaServices = hanaServices;            
         }
 
-        public async Task<List<Dictionary<string,object?>> ExecutarConsultaAsync(string sql, Dictionary<string, object?>? parametros=null)
+        public async Task<List<Dictionary<string, object?>>> ExecutarConsultaAsync(string nomeArquivoSql, params object?[] parametros)
         {
-            var resultado = new List<Dictionary<string, object?>>();
-            using HanaConnection conexao = _hanaServices.CriarConexao();
-            await conexao.OpenAsync();
+           string caminhoSql = Path.Combine(AppContext.BaseDirectory,"Queries", nomeArquivoSql);
 
-            using HanaCommand command = new(sql, conexao);
-
-            if (parametros != null)
+           if (!File.Exists(caminhoSql))
             {
-                foreach(var parametro in parametros)
-                {
-                    command.Parameters.AddWithValue(parametro.Key, parametro.Value ?? DBNull.Value);
-                }
+                throw new FileNotFoundException($"Arquivo SQL não encontrado: {caminhoSql}");
             }
 
-            using HanaDataReader reader = (HanaDataReader)await command.ExecuteReaderAsync();
-            
-            while (await reader.ReadAsync())
+           string sql = await File.ReadAllTextAsync(caminhoSql);
+
+           var resultado = new List<Dictionary<string, object?>>();
+
+           using HanaConnection conexao = _hanaServices.CriarConexao();
+           await conexao.OpenAsync();
+
+           using HanaCommand comando = new(sql, conexao);
+
+           foreach(var parametro in parametros)
+            {
+                comando.Parameters.AddWithValue(string.Empty, parametro ?? DBNull.Value);
+            }
+           using HanaDataReader leitor = (HanaDataReader)await comando.ExecuteReaderAsync();
+
+            while (await leitor.ReadAsync())
             {
                 var registro = new Dictionary<string, object?>();
-
-                for(int i = 0; i< reader.FieldCount; i++)
+                for(int i = 0; i < leitor.FieldCount; i++)
                 {
-                    registro[reader.GetName(i)] = reader.IsDBNull(i) ? null : reader.GetValue(i);
+                    registro[leitor.GetName(i)] = leitor.IsDBNull(i) ? null : leitor.GetValue(i);
                 }
                 resultado.Add(registro);
             }
             return resultado;
-
-
         }
     }
 }
