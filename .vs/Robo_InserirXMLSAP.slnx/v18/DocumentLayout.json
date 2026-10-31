@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:repository\\hanarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\queries\\buscarparceiroporcnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:queries\\buscarparceiroporcnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\services\\hanaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:services\\hanaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:services\\xmlservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\queries\\cnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:queries\\cnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|i:\\projeto sap\\robo_inserirxmlsap\\queries\\buscarparceiroporcnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{B16735E9-D7A1-B54B-B617-C0136EE50E6B}|Robo_InserirXMLSAP.csproj|solutionrelative:queries\\buscarparceiroporcnpj.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Repository\\HanaRepository.cs",
               "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Repository\\HanaRepository.cs",
               "RelativeToolTip": "Repository\\HanaRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswCoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T01:23:50.528Z",
               "EditorCaption": ""
@@ -57,14 +61,14 @@
               "RelativeDocumentMoniker": "Services\\CteServices.cs",
               "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Services\\CteServices.cs",
               "RelativeToolTip": "Services\\CteServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T01:22:13.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -72,12 +76,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T18:42:49.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T18:42:49.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HanaServices.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Services\\HanaServices.cs",
               "RelativeDocumentMoniker": "Services\\HanaServices.cs",
@@ -85,23 +88,23 @@
               "RelativeToolTip": "Services\\HanaServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T18:43:17.636Z",
+              "WhenOpened": "2026-10-29T18:43:17.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BuscarParceiroPorCnpj.sql ",
+              "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Queries\\BuscarParceiroPorCnpj.sql",
+              "RelativeDocumentMoniker": "Queries\\BuscarParceiroPorCnpj.sql",
+              "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Queries\\BuscarParceiroPorCnpj.sql",
+              "RelativeToolTip": "Queries\\BuscarParceiroPorCnpj.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-10-27T02:47:27.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CNPJ.sql",
-              "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Queries\\CNPJ.sql",
-              "RelativeDocumentMoniker": "Queries\\CNPJ.sql",
-              "ToolTip": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Queries\\CNPJ.sql",
-              "RelativeToolTip": "Queries\\CNPJ.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-10-27T02:47:27.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "XmlServices.cs",
               "DocumentMoniker": "I:\\Projeto SAP\\Robo_InserirXMLSAP\\Services\\XmlServices.cs",
               "RelativeDocumentMoniker": "Services\\XmlServices.cs",

@@ -6,6 +6,21 @@ namespace Robo_InserirXMLSAP.Services
 {
     public class XmlServices
     {
+
+        public List<string> LocalizarArquivoXml(string diretorio)
+        {
+            if(!Directory.Exists(diretorio))
+            {
+                throw new DirectoryNotFoundException($"Diretorio não encontrado: {diretorio}");
+            }
+            return Directory.GetFiles(diretorio, "*.xml", SearchOption.TopDirectoryOnly).ToList();
+        }
+
+        public XDocument CarregarXml(string caminhoArquivo)
+        {
+            return XDocument.Load(caminhoArquivo);
+        }
+
        public CteModel CteDados(XDocument documento)
         {
             XNamespace ns = "http://www.portalfiscal.inf.br/cte";

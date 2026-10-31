@@ -1,4 +1,5 @@
 ﻿
+using Robo_InserirXMLSAP.Models;
 using Robo_InserirXMLSAP.Repository;
 
 namespace Robo_InserirXMLSAP.Services
@@ -12,9 +13,9 @@ namespace Robo_InserirXMLSAP.Services
             _hanaRepository = hanaRepository;
         }
 
-        public async Task<string?> BuscarCardCodeCNPJ(string cnpj)
+        public async Task<string?> BuscarCardCodeCNPJ(CteModel cte)
         {
-            var resultado = await _hanaRepository.ExecutarConsultaAsync("BuscarCardCodeCNPJ.sql", cnpj);
+            var resultado = await _hanaRepository.ExecutarConsultaAsync("BuscarCardCodeCNPJ.sql", cte.CNPJ);
 
             if(resultado.Count == 0)
             {
