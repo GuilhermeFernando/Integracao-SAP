@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using Robo_InserirXMLSAP.Configuration;
 public class XmlConfiguration
 {
     private readonly IConfiguration _configuration;
@@ -31,5 +32,13 @@ public class XmlConfiguration
         ?? throw new InvalidOperationException("A configuracao da SL nao foi encontrada");
     }
 
+
+    public HanaConfiguration GetHanaConfiguration()
+    {
+        return _configuration
+            .GetSection("HanaConnection")
+            .Get<HanaConfiguration>()
+            ?? throw new InvalidOperationException("A configuração do HANA nao foi encontrada");
+    }
     
 }

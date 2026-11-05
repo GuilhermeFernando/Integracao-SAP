@@ -1,7 +1,10 @@
 ﻿
+using Robo_InserirXMLSAP.Configuration;
 using Robo_InserirXMLSAP.Models;
+using Robo_InserirXMLSAP.Repository;
 using Robo_InserirXMLSAP.Services;
 using System.Xml.Linq;
+
 
 try
 {
@@ -19,8 +22,21 @@ try
 
     await sapServices.GarantirSessaoAsync();
     Console.WriteLine("Garantia de sessão concluída.");
-
     XmlServices xmlServices = new();
+    
+    HanaConfiguration hanaConfiguration = configuracao.GetHanaConfiguration();
+    HanaServices hanaServices = new
+        (
+         hanaConfiguration.Server,
+         hanaConfiguration.Database,
+         hanaConfiguration.DBUser,
+         hanaConfiguration.DBPassword
+        );
+
+    HanaRepository hanaRepository = new(hanaServices);
+
+    CteServices cteServices = new(hanaRepository);
+
 
     List<string> arquivoXml = xmlServices.LocalizarArquivoXml(settings.SourceDirectory);
 
@@ -34,6 +50,17 @@ try
         CteModel cte = xmlServices.CteDados(documento);
 
         Console.WriteLine($"CNPJ do emitente: {cte.CNPJ}");
+
+        string? cardCode = await cteServices.BuscarCardCodeCNPJ(cte);
+
+        if(string.IsNullOrWhiteSpace(cardCode) )
+        {
+            Console.WriteLine("Parceiro não encontrado no SAP");
+        }
+        else
+        {
+            Console.WriteLine($"CardCode encontrado: {cardCode}");
+        }
     }
 
 

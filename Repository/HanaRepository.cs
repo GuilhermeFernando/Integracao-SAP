@@ -34,7 +34,8 @@ namespace Robo_InserirXMLSAP.Repository
             {
                 comando.Parameters.AddWithValue(string.Empty, parametro ?? DBNull.Value);
             }
-           using HanaDataReader leitor = (HanaDataReader)await comando.ExecuteReaderAsync();
+
+           using var leitor = await comando.ExecuteReaderAsync();
 
             while (await leitor.ReadAsync())
             {
